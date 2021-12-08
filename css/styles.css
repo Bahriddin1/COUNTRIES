@@ -4,7 +4,7 @@
 @font-face {
   font-family: "Nunito Sans";
   src: url("../fonts/") format("woff2"),
-      url("../fonts/NunitoSans-SemiBold.woff") format("woff");
+  url("../fonts/NunitoSans-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -13,7 +13,7 @@
 @font-face {
   font-family: "Nunito Sans";
   src: url("../fonts/NunitoSans-Regular.woff2") format("woff2"),
-      url("../fonts/NunitoSans-Regular.woff") format("woff");
+  url("../fonts/NunitoSans-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -22,7 +22,7 @@
 @font-face {
   font-family: "Nunito Sans";
   src: url("../fonts/NunitoSans-Light.woff2") format("woff2"),
-      url("../fonts/NunitoSans-Light.woff") format("woff");
+  url("../fonts/NunitoSans-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -31,7 +31,7 @@
 @font-face {
   font-family: "Nunito Sans";
   src: url("../fonts/NunitoSans-ExtraBold.woff2") format("woff2"),
-      url("../fonts/NunitoSans-ExtraBold.woff") format("woff");
+  url("../fonts/NunitoSans-ExtraBold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -62,7 +62,7 @@ body{
   font-family: "Roboto", "Arial", sans-serif ;
   font-size: 16px;
   line-height: 1.75;
-  background-color: #fff;
+  background-color: #F2F2F2;
   color: #222;
 }
 
@@ -88,25 +88,25 @@ a:focus{
 /* HEADEER  */
 
 .site-header {
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding-top: 23px;
-padding-right: 80px;
-padding-bottom: 23px;
-padding-left: 80px;
-background: #FFFFFF;
-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0562443);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 23px;
+  padding-right: 80px;
+  padding-bottom: 23px;
+  padding-left: 80px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0562443);
 }
 .header-heading {
   padding: 0;
-margin: 0;
+  margin: 0;
   font-family: "Nunito Sans";
   font-style: normal;
   font-weight: 800;
   font-size: 24px;
   line-height: 33px;
- color: #111517;
+  color: #111517;
 }
 .dark-mode {
   font-family: "Nunito Sans";
@@ -115,7 +115,7 @@ margin: 0;
   font-size: 16px;
   line-height: 22px;
   text-decoration: none;
-color: #111517;
+  color: #111517;
 }
 
 
@@ -127,6 +127,47 @@ color: #111517;
   padding-bottom: 45px;
   padding-left: 80px;
 }
+
+/* SEARCH  */
+.forms {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.global-search-form{
+  background-color: #FFFFFF;
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+  border-radius: 5px;
+}
+
+.global-search-form-input {
+  padding-top: 18px;
+  padding-right: 270px;
+  padding-bottom: 18px;
+  padding-left: 74px;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: normal;
+  border: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #848484;
+
+}
+
+
+
+.filter-form {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 24px;
+  background: #FFFFFF;
+box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+border-radius: 5px;
+}
+
 .countries-info {
   display: flex;
   flex-direction: column;
@@ -136,13 +177,57 @@ color: #111517;
   display: flex;
   align-items: center;
   /* justify-content: space-between; */
+  padding: 0;
+}
+.countries-info-list-item {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.0294384);
+  border-radius: 5px;
+}
 
+.countries-info-list-item:not(:last-child){
+  margin-right: 75px;
 }
-/* .countries-info-list-item {
-}
+
+
 .countries-info-img {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 24px;
+  width: 267px;
+  height: 160px;
 }
+
+.countries-info-list-div{
+  display: flex;
+  flex-direction: column;
+  padding-top: 0;
+  padding-bottom: 46px;
+  padding-left: 24px;
+}
+
 .countries-info-heading {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 26px;
+  color: #111517;
 }
 .countries-info-text {
-} */
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #111517;
+}

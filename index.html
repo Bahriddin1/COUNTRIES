@@ -12,124 +12,160 @@
 
 </head>
 <body>
-<!-- HEADER  -->
+  <!-- HEADER  -->
 
   <div class="container">
-<header class="site-header">
+    <header class="site-header">
 
-  <h2 class="header-heading">Where in the world?</h2>
+      <h2 class="header-heading">Where in the world?</h2>
 
-  <a href="#" class="dark-mode">Dark Mode</a>
-</header>
-</div>
-
-
-<main class="site-main-content">
-
-<div class="container">
-<div class="search-info-wrapper">
-
-  <!-- SEARCH AND FILTER -->
+      <a href="#" class="dark-mode">Dark Mode</a>
+    </header>
+  </div>
 
 
+  <main class="site-main-content">
 
-  <!-- COUNTRIES-INFO  -->
+    <div class="container">
+      <div class="search-info-wrapper">
 
-<div class="countries-info">
+        <!-- SEARCH AND FILTER -->
 
-<ul class="countries-info-list">
+<div class="forms">
 
-  <!-- COUNTRIES-INFO-LIST-ITEM  -->
-<li class="countries-info-list-item">
-  <img class="countries-info-img" src="" alt="" width="267" height="160">
-<h4 class="countries-info-heading">Germany</h4>
-<p class="countries-info-text"><strong>Population:</strong> 81,770,900</p>
-<p class="countries-info-text"><strong>Region:</strong> Europe</p>
-<p class="countries-info-text"><strong>Capital:</strong> Berlin</p>
+          <!-- GLOBAL-SEARCH-FORM -->
+          <form class="global-search-form " action="http://echo.htmlacademy.ru" method="GET">
+            <input class="global-search-form-input" type="search" name="search" placeholder="Search for a country…" aria-label="Search for a country…" required >
+          </form>
 
-</li>
+          <!-- FILTER  -->
+          <form class="filter-form" action="http://echo.htmlacademy.ru">
+            <label for="filter-select">Filter by Region</label>
+            <select   name="country_type" id="filter-select">
 
-  <!-- COUNTRIES-INFO-LIST-ITEM  -->
-  <li class="countries-info-list-item">
-    <img class="countries-info-img" src="" alt="" width="267" height="160">
-  <h4 class="countries-info-heading">Germany</h4>
-  <p class="countries-info-text"><strong>Population:</strong> 81,770,900</p>
-  <p class="countries-info-text"><strong>Region:</strong> Europe</p>
-  <p class="countries-info-text"><strong>Capital:</strong> Berlin</p>
-
-  </li>
-
-  <!-- COUNTRIES-INFO-LIST-ITEM  -->
-  <li class="countries-info-list-item">
-    <img class="countries-info-img" src="" alt="" width="267" height="160">
-  <h4 class="countries-info-heading">Germany</h4>
-  <p class="countries-info-text"><strong>Population:</strong> 81,770,900</p>
-  <p class="countries-info-text"><strong>Region:</strong> Europe</p>
-  <p class="countries-info-text"><strong>Capital:</strong> Berlin</p>
-
-  </li>
-
-  <!-- COUNTRIES-INFO-LIST-ITEM  -->
-  <li class="countries-info-list-item">
-    <img class="countries-info-img" src="" alt="" width="267" height="160">
-  <h4 class="countries-info-heading">Germany</h4>
-  <p class="countries-info-text"><strong>Population:</strong> 81,770,900</p>
-  <p class="countries-info-text"><strong>Region:</strong> Europe</p>
-  <p class="countries-info-text"><strong>Capital:</strong> Berlin</p>
-
-  </li>
-
-</ul>
-
-<ul class="countries-info-list">
-
-  <!-- COUNTRIES-INFO-LIST-ITEM  -->
-<li class="countries-info-list-item">
-  <img class="countries-info-img" src="" alt="" width="267" height="160">
-<h4 class="countries-info-heading">Germany</h4>
-<p class="countries-info-text"><strong>Population:</strong> 81,770,900</p>
-<p class="countries-info-text"><strong>Region:</strong> Europe</p>
-<p class="countries-info-text"><strong>Capital:</strong> Berlin</p>
-
-</li>
-
-  <!-- COUNTRIES-INFO-LIST-ITEM  -->
-  <li class="countries-info-list-item">
-    <img class="countries-info-img" src="" alt="" width="267" height="160">
-  <h4 class="countries-info-heading">Germany</h4>
-  <p class="countries-info-text"><strong>Population:</strong> 81,770,900</p>
-  <p class="countries-info-text"><strong>Region:</strong> Europe</p>
-  <p class="countries-info-text"><strong>Capital:</strong> Berlin</p>
-
-  </li>
-
-  <!-- COUNTRIES-INFO-LIST-ITEM  -->
-  <li class="countries-info-list-item">
-    <img class="countries-info-img" src="" alt="" width="267" height="160">
-  <h4 class="countries-info-heading">Germany</h4>
-  <p class="countries-info-text"><strong>Population:</strong> 81,770,900</p>
-  <p class="countries-info-text"><strong>Region:</strong> Europe</p>
-  <p class="countries-info-text"><strong>Capital:</strong> Berlin</p>
-
-  </li>
-
-  <!-- COUNTRIES-INFO-LIST-ITEM  -->
-  <li class="countries-info-list-item">
-    <img class="countries-info-img" src="" alt="" width="267" height="160">
-  <h4 class="countries-info-heading">Germany</h4>
-  <p class="countries-info-text"><strong>Population:</strong> 81,770,900</p>
-  <p class="countries-info-text"><strong>Region:</strong> Europe</p>
-  <p class="countries-info-text"><strong>Capital:</strong> Berlin</p>
-
-  </li>
-
-</ul>
-</div>
+              <option value="Africa" >Africa</option>
+              <option value="America">America</option>
+              <option value="Asia">Asia</option>
+              <option value="Europe">Europe</option>
+              <option value="Oceania">Oceania</option>
+            </select>
+          </form>
 
 </div>
 
-</div>
+        <!-- COUNTRIES-INFO  -->
 
-</main>
+        <div class="countries-info">
+
+          <ul class="countries-info-list">
+
+            <!-- COUNTRIES-INFO-LIST-ITEM  -->
+            <li class="countries-info-list-item">
+              <img class="countries-info-img" src="img/germany.png" alt="Germany flag" width="267" height="160" srcset="img/germany.png 1x, img/germany@2x.png 2x">
+              <div class="countries-info-list-div">
+                <h4 class="countries-info-heading">Germany</h4>
+                <p class="countries-info-text"><strong>Population:</strong> 81,770,900</p>
+                <p class="countries-info-text"><strong>Region:</strong> Europe</p>
+                <p class="countries-info-text"><strong>Capital:</strong> Berlin</p>
+              </div>
+
+            </li>
+
+            <!-- COUNTRIES-INFO-LIST-ITEM  -->
+            <li class="countries-info-list-item">
+              <img class="countries-info-img" src="img/usa.png" alt="USA flag" width="267" height="160" srcset="img/usa.png 1x, img/usa@2x.png 2x">
+              <div class="countries-info-list-div">
+                <h4 class="countries-info-heading">Germany</h4>
+                <p class="countries-info-text"><strong>Population:</strong> 81,770,900</p>
+                <p class="countries-info-text"><strong>Region:</strong> Europe</p>
+                <p class="countries-info-text"><strong>Capital:</strong> Berlin</p>
+              </div>
+
+            </li>
+
+            <!-- COUNTRIES-INFO-LIST-ITEM  -->
+            <li class="countries-info-list-item">
+              <img class="countries-info-img" src="img/brazil.png" alt="Brazil flag" width="267" height="160"  srcset="img/brazil.png 1x, img/brazil@2x.png 2x">
+              <div class="countries-info-list-div">
+                <h4 class="countries-info-heading">Germany</h4>
+                <p class="countries-info-text"><strong>Population:</strong> 81,770,900</p>
+                <p class="countries-info-text"><strong>Region:</strong> Europe</p>
+                <p class="countries-info-text"><strong>Capital:</strong> Berlin</p>
+              </div>
+
+            </li>
+
+            <!-- COUNTRIES-INFO-LIST-ITEM  -->
+            <li class="countries-info-list-item">
+              <img class="countries-info-img" src="img/uk.png" alt="Iceland flag" width="267" height="160"  srcset="img/uk.png 1x, img/uk@2x.png 2x">
+              <div class="countries-info-list-div">
+                <h4 class="countries-info-heading">Germany</h4>
+                <p class="countries-info-text"><strong>Population:</strong> 81,770,900</p>
+                <p class="countries-info-text"><strong>Region:</strong> Europe</p>
+                <p class="countries-info-text"><strong>Capital:</strong> Berlin</p>
+              </div>
+
+            </li>
+
+          </ul>
+
+          <ul class="countries-info-list">
+
+            <!-- COUNTRIES-INFO-LIST-ITEM  -->
+            <li class="countries-info-list-item">
+              <img class="countries-info-img" src="img/aphganistan.png" alt="Afghanistan" width="267" height="160" srcset="img/aphganistan.png 1x, img/aphganistan@2x.png 2x">
+              <div class="countries-info-list-div">
+                <h4 class="countries-info-heading">Germany</h4>
+                <p class="countries-info-text"><strong>Population:</strong> 81,770,900</p>
+                <p class="countries-info-text"><strong>Region:</strong> Europe</p>
+                <p class="countries-info-text"><strong>Capital:</strong> Berlin</p>
+              </div>
+
+            </li>
+
+            <!-- COUNTRIES-INFO-LIST-ITEM  -->
+            <li class="countries-info-list-item">
+              <img class="countries-info-img" src="img/aland-islands.png" alt="Aland Isalnds" width="267" height="160" srcset="img/aland-islands.png 1x, img/aland-islands@2x.png 2x">
+              <div class="countries-info-list-div">
+                <h4 class="countries-info-heading">Germany</h4>
+                <p class="countries-info-text"><strong>Population:</strong> 81,770,900</p>
+                <p class="countries-info-text"><strong>Region:</strong> Europe</p>
+                <p class="countries-info-text"><strong>Capital:</strong> Berlin</p>
+              </div>
+
+            </li>
+
+            <!-- COUNTRIES-INFO-LIST-ITEM  -->
+            <li class="countries-info-list-item">
+              <img class="countries-info-img" src="img/albania.png" alt="Albania flag" width="267" height="160" srcset="img/albania.png 1x, img/albania@2x.png 2x">
+              <div class="countries-info-list-div">
+                <h4 class="countries-info-heading">Germany</h4>
+                <p class="countries-info-text"><strong>Population:</strong> 81,770,900</p>
+                <p class="countries-info-text"><strong>Region:</strong> Europe</p>
+                <p class="countries-info-text"><strong>Capital:</strong> Berlin</p>
+              </div>
+
+            </li>
+
+            <!-- COUNTRIES-INFO-LIST-ITEM  -->
+            <li class="countries-info-list-item">
+              <img class="countries-info-img" src="img/algeria.png" alt="Algeria flag" width="267" height="160" srcset="img/algeria.png 1x, img/algeria@2x.png 2x">
+              <div class="countries-info-list-div">
+                <h4 class="countries-info-heading">Germany</h4>
+                <p class="countries-info-text"><strong>Population:</strong> 81,770,900</p>
+                <p class="countries-info-text"><strong>Region:</strong> Europe</p>
+                <p class="countries-info-text"><strong>Capital:</strong> Berlin</p>
+              </div>
+
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
 </body>
 </html>
