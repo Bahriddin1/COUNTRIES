@@ -1,3 +1,11 @@
+/* ROOT  */
+:root{
+--text-color: #111517;
+--index-bg-color: #F2F2F2;
+--countries-info-bg: #FFFFFF;
+--search-text-color: #848484;
+}
+
 
 /* FONTS  */
 
@@ -62,8 +70,15 @@ body{
   font-family: "Roboto", "Arial", sans-serif ;
   font-size: 16px;
   line-height: 1.75;
-  background-color: #F2F2F2;
-  color: #222;
+  background-color: var(--index-bg-color);
+  color: var(--text-color);
+}
+
+.dark-mode{
+  --text-color: #FFFFFF;
+--index-bg-color: #202C36;
+--countries-info-bg: #2B3844;
+--search-text-color: #FFFFFF;
 }
 
 img{
@@ -95,7 +110,7 @@ a:focus{
   padding-right: 80px;
   padding-bottom: 23px;
   padding-left: 80px;
-  background: #FFFFFF;
+  background-color: var(--countries-info-bg);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0562443);
 }
 .header-heading {
@@ -106,16 +121,16 @@ a:focus{
   font-weight: 800;
   font-size: 24px;
   line-height: 33px;
-  color: #111517;
+  color: var(--text-color);
 }
-.dark-mode {
+.dark-mode-button {
   font-family: "Nunito Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
   text-decoration: none;
-  color: #111517;
+  color: var(--text-color);
 }
 
 
@@ -137,9 +152,11 @@ a:focus{
 }
 
 .global-search-form{
-  background-color: #FFFFFF;
+  background-color: var(--countries-info-bg);
   box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
   border-radius: 5px;
+  color: var(--search-text-color);
+
 }
 
 .global-search-form-input {
@@ -153,8 +170,13 @@ a:focus{
   border: 0;
   font-size: 14px;
   line-height: 20px;
-  color: #848484;
+  background-color: var(--countries-info-bg);
+  color: var(--search-text-color);
 
+}
+
+.global-search-form-input::placeholder{
+  color: var(--search-text-color);
 }
 
 
@@ -163,7 +185,7 @@ a:focus{
   padding-top: 18px;
   padding-bottom: 18px;
   padding-left: 24px;
-  background: #FFFFFF;
+  background-color: var(--countries-info-bg);
 box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
 border-radius: 5px;
 }
@@ -183,7 +205,7 @@ border-radius: 5px;
   display: flex;
   flex-direction: column;
   padding: 0;
-  background: #FFFFFF;
+  background-color: var(--countries-info-bg);
   box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.0294384);
   border-radius: 5px;
 }
@@ -218,7 +240,7 @@ border-radius: 5px;
   font-weight: 800;
   font-size: 18px;
   line-height: 26px;
-  color: #111517;
+  color: var(--text-color);
 }
 .countries-info-text {
   padding: 0;
@@ -229,5 +251,5 @@ border-radius: 5px;
   font-weight: 600;
   font-size: 14px;
   line-height: 16px;
-  color: #111517;
+  color: var(--text-color);
 }
